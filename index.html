@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>I Love You</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f0f0f0;
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      #container {
+        width: 80%;
+        height: 80%;
+        overflow-y: scroll;
+        background: #fff;
+        border: 1px solid #ccc;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container"></div>
+
+    <script>
+      const container = document.getElementById("container");
+
+      function writeLoveYou() {
+        for (let i = 1; i <= 1; i++) {
+          const loveText = document.createElement("div");
+          loveText.textContent = "I love you Mishu ❤❤❤❤❤";
+          container.appendChild(loveText);
+        }
+      }
+
+      setInterval(writeLoveYou, 1000); // 100 times per second
+    </script>
+  </body>
+</html>

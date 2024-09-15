@@ -6,29 +6,33 @@
     <title>I Love You</title>
     <link rel="stylesheet" href="styles.css" />
     <style>
+      @import url("https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap");
+
       body {
+        font-family: "Protest Guerrilla", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        background-color: #121212;
+        max-width: 450px;
         display: flex;
-        justify-content: center;
         align-items: center;
-        height: 100vh;
-        background-color: #f0f0f0;
-        margin: 0;
-        font-family: Arial, sans-serif;
+        justify-content: center;
       }
 
-      #container {
-        width: 80%;
-        height: 80%;
-        overflow-y: scroll;
-        background: #fff;
-        border: 1px solid #ccc;
-        padding: 20px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      video {
+        display: block;
+        width: 100%;
+        height: 90vh;
       }
     </style>
   </head>
   <body>
-    <div id="container"></div>
+    <div id="container">
+      <video autoplay>
+        <source src="hello.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
 
     <script>
       const container = document.getElementById("container");
@@ -36,7 +40,7 @@
       function writeLoveYou() {
         for (let i = 1; i <= 1; i++) {
           const loveText = document.createElement("div");
-          loveText.textContent = "শিপা টেপি 😂😂 শিপা পেছি 😂😂";
+          loveText.textContent = "I Miss You Sumi 💔💔💔";
           container.appendChild(loveText);
         }
       }
